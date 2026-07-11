@@ -10,9 +10,9 @@ require("dotenv").config();
 const app = express();
 const allowedOrigins = [process.env.FRONTEND_URL, process.env.VITE_API_URL, "http://localhost:5173"].filter(Boolean);
 
-console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
-console.log("VITE_API_URL =", process.env.VITE_API_URL);
-console.log("Allowed Origins =", allowedOrigins);
+// console.log("FRONTEND_URL =", process.env.FRONTEND_URL);
+// console.log("VITE_API_URL =", process.env.VITE_API_URL);
+// console.log("Allowed Origins =", allowedOrigins);
 app.use(
   cors({
     origin: (origin, callback) => {
